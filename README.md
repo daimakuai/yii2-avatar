@@ -2,7 +2,12 @@
 ====
 基于cropper的一款头像上传yii2组件,
 
-@from 代码块中文网（www.daimakuai.com）
+@from 代码块中文网 (www.daimakuai.com)
+
+截图
+------------
+
+![daimakuai](https://raw.githubusercontent.com/daimakuai/yii2-avatar/master/pic.png)
 
 Installation
 ------------
