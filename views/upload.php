@@ -5,11 +5,21 @@ use yii\bootstrap\Html;
 ?>
 
 <script>
-    $("#pre_avatar").attr('src','<?=$this->context->imageUrl?>');
+    var def_pic = $('#'+target_tip).val();
+    var def_pic1 = '<?=$this->context->imageUrl?>';
+    if(def_pic==""){
+        $('#pre_avatar').attr('src',def_pic1);
+    }else{
+        $('#pre_avatar').attr('src',""+def_pic);
+    }
+
+    $("#pre_avatar").attr('src','');
+    $('#pre_avatar').on('click',function(){$(".avatar-view").click();});
+
 </script>
 <div id="crop-avatar">
 
-    <div class="avatar-view" style="display: block;">
+    <div class="avatar-view" style="display: none;">
         <img src="<?=$this->context->imageUrl?>" alt="Avatar">
     </div>
 

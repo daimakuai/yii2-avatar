@@ -32,13 +32,14 @@ class AvatarUploadWidget extends Widget
     public function run()
     {
         parent::init();
+        $this->registerClientScript();
     }
 
     public function registerClientScript()
     {
         AvatarAsset::register($this->view);
-        $script = "new CropAvatar($('#".$this->options['id']."'));";
-        $this->view->registerJs($script, View::POS_READY);
+        //$script = "";
+        //$this->view->registerJs($script,View::POS_READY);
     }
 
     public function setFooter()

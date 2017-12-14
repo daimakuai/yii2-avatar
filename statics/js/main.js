@@ -141,6 +141,8 @@
           file = files[0];
 
           if (this.isImageFile(file)) {
+
+
             if (this.url) {
               URL.revokeObjectURL(this.url); // Revoke the old one
             }
@@ -301,6 +303,10 @@
     },
 
     cropDone: function () {
+      if(target_tip!=''){
+          $('#'+target_tip).val(this.url);
+          $('#pre_avatar').attr('src',this.url);
+      }
       this.$avatarForm.get(0).reset();
       this.$avatar.attr('src', this.url);
       this.stopCropper();
@@ -320,7 +326,7 @@
   };
 
   $(function () {
-    //return new CropAvatar($('#crop-avatar'));
+    return new CropAvatar($('#crop-avatar'));
   });
 
 });

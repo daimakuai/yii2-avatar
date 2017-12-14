@@ -49,8 +49,11 @@ class AvatarViewWidget extends InputWidget
     public function registerClientScript()
     {
         AvatarAsset::register($this->view);
-        $script = "new CropAvatar($('#".$this->options['id']."'));";
-        $this->view->registerJs($script, View::POS_READY);
+        $script = "var target_tip ='".$this->options['id']."';";
+        $this->view->registerJs($script, View::POS_BEGIN);
+
+        $script1 = "var def_pic2 = $('#'+target_tip).val();if(def_pic2!=\"\"){     $('#pre_avatar').attr('src',def_pic2);   }";
+        $this->view->registerJs($script1, View::POS_READY);
     }
 
     public function setFooter()
