@@ -64,10 +64,12 @@ public function actions()
 在From里可以单独使用
 ```php
 
+放到Form里
 
 <?= $form->field($model, 'avatar')->widget(\daimakuai\avatar\AvatarViewWidget::className()) ?>
 
 
+放到Form外
 <?php $obj = new \daimakuai\avatar\AvatarUploadWidget(['imageUrl'=>'/statics/images/avatar/avatar.jpg']);echo $obj->setFooter(); ?>
 
 ```
