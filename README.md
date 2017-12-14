@@ -54,15 +54,15 @@ public function actions()
 }
  
 //调用方式,imageUrl为默认图地址
-<?= \daimakuai\avatar\AvatarWidget::widget(['imageUrl'=>'/statics/images/avatar/avatar_1.jpg']); ?>
+<?= \daimakuai\avatar\AvatarWidget::widget(['imageUrl'=>'/statics/images/avatar/avatar.jpg']); ?>
 ```
 在From里可以单独使用
 ```php
 
 
-<?= $form->field($model, 'avatar')->widget(AvatarViewWidget::className()) ?>
+<?= $form->field($model, 'avatar')->widget(\daimakuai\avatar\AvatarViewWidget::className()) ?>
 
 
-<?php $b = new AvatarUploadWidget(['imageUrl'=>'/image/common/hearder-user.png']);echo $b->setFooter(); ?>
+<?php $obj = new \daimakuai\avatar\AvatarUploadWidget(['imageUrl'=>'/statics/images/avatar/avatar.jpg']);echo $obj->setFooter(); ?>
 
 ```
