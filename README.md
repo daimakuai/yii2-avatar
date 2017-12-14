@@ -7,7 +7,7 @@
 截图
 ------------
 
-![daimakuai](https://raw.githubusercontent.com/daimakuai/yii2-avatar/master/pic.png)
+![daimakuai](https://raw.githubusercontent.com/daimakuai/yii2-avatar/master/pic.jpg)
 
 Installation
 ------------
