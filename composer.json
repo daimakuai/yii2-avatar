@@ -1,0 +1,21 @@
+{
+    "name": "daimakuai/yii2-avatar",
+    "description": "基于cropper的一款头像上传yii2组件",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","daimakuai"],
+    "license": "BSD-4-Clause",
+    "authors": [
+        {
+            "name": "Yang tao",
+            "email": "431910788@qq.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "daimakuai\\avatar\\": ""
+        }
+    }
+}
