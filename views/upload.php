@@ -13,7 +13,7 @@ use yii\bootstrap\Html;
         $('#pre_avatar').attr('src',""+def_pic);
     }
 
-    $("#pre_avatar").attr('src','');
+    //$("#pre_avatar").attr('src','');
     $('#pre_avatar').on('click',function(){$(".avatar-view").click();});
 
 </script>
