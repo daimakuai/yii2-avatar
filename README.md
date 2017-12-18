@@ -1,6 +1,6 @@
 头像上传
 ====
-基于cropper的一款头像上传yii2组件,
+基于cropper的一款头像上传yii2组件
 
 @from 代码块中文网 (www.daimakuai.com)
 
