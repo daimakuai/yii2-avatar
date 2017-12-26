@@ -18,6 +18,7 @@ class AvatarAsset extends AssetBundle
     ];
     
     public $js = [
+        '//code.jquery.com/jquery-1.12.4.min.js',
         'js/cropper.min.js',
         'js/main.js',
         'js/site.js'

@@ -120,3 +120,7 @@ body {
   filter: alpha(opacity=75);
   z-index: 20140628;
 }
+
+ #pre_avatar {
+	height:100%;
+ }
